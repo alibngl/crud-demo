@@ -1,0 +1,16 @@
+.delete {
+    background-color: red;
+    color: white;
+}
+
+th {
+    width: 15%;
+}
+
+.id {
+    width: 5% !important;
+}
+
+.deleteTh {
+    width: 3% !important;
+}
