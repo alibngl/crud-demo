@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../css/Header.css"
 
 function Header() {
-  const token = localStorage.getItem('token'); // Kullanıcının giriş yapıp yapmadığını kontrol ediyoruz
+  const token = localStorage.getItem('token');
   const roles = JSON.parse(localStorage.getItem('roles')) || [];
 
   const isAdmin = roles.includes('ADMIN');

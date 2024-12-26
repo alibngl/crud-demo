@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="" />
+    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="import" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +18,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -40,50 +43,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LogbackTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CrudDemoApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.Log4j2Test.testLog.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.LogbackTest.testLog.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.LoginControllerDiffblueTest.testLogin_givenLocationTableIdIsTwo_thenContentStringAString.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerDiffblueTest.testGetAllUsers_thenContentStringLeftSquareBracketRightSquareBracket.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerDiffblueTest.testRegisterUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest$NoBeforeEachContext.registerUser_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.allUsers_Success.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.UserControllerTest.deleteUser_Failure.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.deleteUser_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.getAllUsers_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.getUserById_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.registerUser_Failure.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.registerUser_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.testDeleteUser_Success.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.testDeleteUser_UserNotFound.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserControllerTest.updateUser_Failure.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.UserControllerTest.updateUser_Success.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.crudDemo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.crudDemo [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CrudDemoApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/abingol/Desktop/crudDemo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41034484&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LogbackTest.executor": "Run",
+    "JUnit.CrudDemoApplicationTests.contextLoads.executor": "Debug",
+    "JUnit.Log4j2Test.testLog.executor": "Debug",
+    "JUnit.LogbackTest.testLog.executor": "Debug",
+    "JUnit.LoginControllerDiffblueTest.testLogin_givenLocationTableIdIsTwo_thenContentStringAString.executor": "Run",
+    "JUnit.UserControllerDiffblueTest.testGetAllUsers_thenContentStringLeftSquareBracketRightSquareBracket.executor": "Run",
+    "JUnit.UserControllerDiffblueTest.testRegisterUser.executor": "Run",
+    "JUnit.UserControllerTest$NoBeforeEachContext.registerUser_Success.executor": "Run",
+    "JUnit.UserControllerTest.allUsers_Success.executor": "Debug",
+    "JUnit.UserControllerTest.deleteUser_Failure.executor": "Run",
+    "JUnit.UserControllerTest.deleteUser_Success.executor": "Run",
+    "JUnit.UserControllerTest.getAllUsers_Success.executor": "Run",
+    "JUnit.UserControllerTest.getUserById_Success.executor": "Run",
+    "JUnit.UserControllerTest.registerUser_Failure.executor": "Run",
+    "JUnit.UserControllerTest.registerUser_Success.executor": "Run",
+    "JUnit.UserControllerTest.testDeleteUser_Success.executor": "Run",
+    "JUnit.UserControllerTest.testDeleteUser_UserNotFound.executor": "Run",
+    "JUnit.UserControllerTest.updateUser_Failure.executor": "Debug",
+    "JUnit.UserControllerTest.updateUser_Success.executor": "Run",
+    "Maven.crudDemo [clean].executor": "Run",
+    "Maven.crudDemo [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CrudDemoApplication.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/abingol/Documents/GitHub/crud-demo/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.41034484",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ali35\Desktop\crudDemo\src\test" />
@@ -233,7 +237,25 @@
       <workItem from="1735154866555" duration="3497000" />
       <workItem from="1735158714193" duration="600000" />
       <workItem from="1735159331791" duration="4213000" />
+      <workItem from="1735218784705" duration="6041000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1735232158038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735232158038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="import">
+      <option name="closed" value="true" />
+      <created>1735232738187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735232738187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +272,22 @@
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <MESSAGE value="import" />
+    <option name="LAST_COMMIT_MESSAGE" value="import" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,7 +309,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
-          <line>14</line>
+          <line>22</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

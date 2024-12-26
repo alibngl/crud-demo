@@ -15,8 +15,6 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
-        
-        {/* Private Route Kullanımı */}
         <Route
           path="/user"
           element={
