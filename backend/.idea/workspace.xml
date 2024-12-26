@@ -4,37 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1072f7e-f56c-40fc-ac6e-06d71b8981e2" name="Changes" comment="import">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/img/adesso.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/css/Header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/css/UserList.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/AddUser.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/PrivateRoute.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/Unauthorized.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/User.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/pages/UserList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.intellij.jpb.JpaRepository" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -46,50 +29,164 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2qlgHFqPTl49ofnccmxXNa4Ahhs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2pvtftRpJziNfD2ZCcSsk1hIAa9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CrudDemoApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LogbackTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudDemoApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.Log4j2Test.testLog.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LogbackTest.testLog.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LoginControllerDiffblueTest.testLogin_givenLocationTableIdIsTwo_thenContentStringAString.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerDiffblueTest.testGetAllUsers_thenContentStringLeftSquareBracketRightSquareBracket.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerDiffblueTest.testRegisterUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest$NoBeforeEachContext.registerUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.allUsers_Success.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserControllerTest.deleteUser_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.deleteUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.getAllUsers_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.getUserById_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.registerUser_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.registerUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testDeleteUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testDeleteUser_UserNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.updateUser_Failure.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserControllerTest.updateUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.crudDemo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.crudDemo [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CrudDemoApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abingol/Desktop/crudDemo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41034484&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="CrudDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ali35\Desktop\crudDemo\src\test" />
+      <recent name="C:\Users\ali35\Desktop\crudDemo\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.crudDemo.crudDemo.model.dto" />
+      <recent name="com.crudDemo.crudDemo.dao" />
+      <recent name="com.crudDemo.crudDemo.service.impl" />
+      <recent name="com.crudDemo.crudDemo.service" />
+      <recent name="com.crudDemo.crudDemo.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CrudDemoApplication">
+    <configuration name="UserControllerTest.deleteUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.crudDemo.crudDemo.CrudDemoApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.crudDemo.crudDemo.*" />
+          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="deleteUser_Failure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserControllerTest.registerUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crudDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="registerUser_Failure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.updateUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crudDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="updateUser_Failure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="crudDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.crudDemo.crudDemo.CrudDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Write tests for method LoginController.login" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="crudDemo" />
+      <settings run-config-name="Write tests for method LoginController.login" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.crudDemo.crudDemo.controller.LoginController.login:(Lcom/crudDemo/crudDemo/model/UserTable;)Lorg/springframework/http/ResponseEntity;" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for method UserController.deleteUser" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="crudDemo" />
+      <settings run-config-name="Write tests for method UserController.deleteUser" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.crudDemo.crudDemo.controller.UserController.deleteUser:(Ljava/lang/Long;)Lorg/springframework/http/ResponseEntity;" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for method UserController.updateUser" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="crudDemo" />
+      <settings run-config-name="Write tests for method UserController.updateUser" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.crudDemo.crudDemo.controller.UserController.updateUser:(Ljava/lang/Long;Lcom/crudDemo/crudDemo/model/dto/UserDTO;)Lorg/springframework/http/ResponseEntity;" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CrudDemoApplication" />
+        <item itemvalue="JUnit.UserControllerTest.deleteUser_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.updateUser_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.registerUser_Failure" />
       </list>
     </recent_temporary>
   </component>
@@ -104,20 +201,119 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1072f7e-f56c-40fc-ac6e-06d71b8981e2" name="Changes" comment="import" />
-      <created>1735242486856</created>
+      <changelist id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="" />
+      <created>1733658485732</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1735242486856</updated>
-      <workItem from="1735242489804" duration="394000" />
+      <updated>1733658485732</updated>
+      <workItem from="1733658487362" duration="5636000" />
+      <workItem from="1733670336459" duration="2377000" />
+      <workItem from="1733675140934" duration="20101000" />
+      <workItem from="1733937443456" duration="3372000" />
+      <workItem from="1733978801357" duration="12852000" />
+      <workItem from="1734250077094" duration="20872000" />
+      <workItem from="1734364382654" duration="1738000" />
+      <workItem from="1734455594687" duration="90000" />
+      <workItem from="1734455697230" duration="12106000" />
+      <workItem from="1734673304064" duration="3244000" />
+      <workItem from="1734976404814" duration="692000" />
+      <workItem from="1734978036517" duration="1941000" />
+      <workItem from="1735008536554" duration="39000" />
+      <workItem from="1735008758898" duration="12181000" />
+      <workItem from="1735035845846" duration="88000" />
+      <workItem from="1735035948867" duration="4162000" />
+      <workItem from="1735096465022" duration="213000" />
+      <workItem from="1735096695268" duration="309000" />
+      <workItem from="1735097532752" duration="67000" />
+      <workItem from="1735097625405" duration="726000" />
+      <workItem from="1735098367348" duration="1277000" />
+      <workItem from="1735099667832" duration="2967000" />
+      <workItem from="1735105360791" duration="7078000" />
+      <workItem from="1735134176257" duration="1728000" />
+      <workItem from="1735154866555" duration="3497000" />
+      <workItem from="1735158714193" duration="600000" />
+      <workItem from="1735159331791" duration="4213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="import" />
-    <option name="LAST_COMMIT_MESSAGE" value="import" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="com.intellij.configurationType" implementationName="com.diffblue.cover.write-tests-run-configuration" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/UserController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/LoginController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/dto/UserDTO.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/dto/UserDTO.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/UserController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/controller/UserControllerTest.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
