@@ -25,10 +25,10 @@ public class RequestResponseLog {
     @Column(name = "layer_name")
     private String layerName;
 
-    @Column(name = "request_body", length = 5000)
+    @Column(name = "request_body", length = 5000, columnDefinition = "TEXT")
     private String requestBody;
 
-    @Column(name = "response_body", length = 5000)
+    @Column(name = "response_body", length = 5000, columnDefinition = "TEXT")
     private String responseBody;
 
     @Column(name = "created_time")

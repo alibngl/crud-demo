@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/config/CacheConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.2024-12-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.2024-12-27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/CrudDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/CrudDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/impl/AbstractDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/impl/AbstractDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +264,7 @@
       <workItem from="1735158714193" duration="600000" />
       <workItem from="1735159331791" duration="4213000" />
       <workItem from="1735218784705" duration="6041000" />
-      <workItem from="1735244119729" duration="27481000" />
+      <workItem from="1735244119729" duration="29028000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <option name="closed" value="true" />
@@ -321,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735323696598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="import CacheConfig and @EnableCaching">
+      <option name="closed" value="true" />
+      <created>1735330296457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735330296457</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +357,8 @@
     <MESSAGE value="import aspect for controller" />
     <MESSAGE value="import aspect for service" />
     <MESSAGE value="import aspect for ErrorLog" />
-    <option name="LAST_COMMIT_MESSAGE" value="import aspect for ErrorLog" />
+    <MESSAGE value="import CacheConfig and @EnableCaching" />
+    <option name="LAST_COMMIT_MESSAGE" value="import CacheConfig and @EnableCaching" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
