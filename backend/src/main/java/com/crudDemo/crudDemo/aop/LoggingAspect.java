@@ -26,9 +26,19 @@ public class LoggingAspect {
     }
 
     @Around("execution(* com.crudDemo.crudDemo.controller..*(..))")
-    public Object logRequestAndResponse(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object logController(ProceedingJoinPoint joinPoint) throws Throwable {
+        return logRequestAndResponse(joinPoint, "CONTROLLER");
+    }
+
+
+    @Around("execution(* com.crudDemo.crudDemo.service..*(..))")
+    public Object logService(ProceedingJoinPoint joinPoint) throws Throwable {
+        return logRequestAndResponse(joinPoint, "SERVICE");
+    }
+
+    private Object logRequestAndResponse(ProceedingJoinPoint joinPoint, String layer) throws Throwable {
         RequestResponseLog logEntry = new RequestResponseLog();
-        logEntry.setMethodName(joinPoint.getSignature().toShortString());
+        logEntry.setMethodName(layer + " -> " + joinPoint.getSignature().toShortString());
         logEntry.setCreatedTime(LocalDateTime.now());
 
         Object[] args = joinPoint.getArgs();
@@ -52,6 +62,7 @@ public class LoggingAspect {
         logEntry.setCompletedTime(LocalDateTime.now());
         long duration = ChronoUnit.MILLIS.between(logEntry.getCreatedTime(), logEntry.getCompletedTime());
         logEntry.setDurationMs(duration);
+        logEntry.setLayerName(layer);
         logRepository.save(logEntry);
 
         return result;

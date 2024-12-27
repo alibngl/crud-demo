@@ -22,6 +22,9 @@ public class RequestResponseLog {
     @Column(name = "method_name")
     private String methodName;
 
+    @Column(name = "layer_name")
+    private String layerName;
+
     @Column(name = "request_body", length = 5000)
     private String requestBody;
 

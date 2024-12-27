@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/RequestResponseLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.2024-12-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.2024-12-27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +259,7 @@
       <workItem from="1735158714193" duration="600000" />
       <workItem from="1735159331791" duration="4213000" />
       <workItem from="1735218784705" duration="6041000" />
-      <workItem from="1735244119729" duration="18310000" />
+      <workItem from="1735244119729" duration="20446000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <option name="closed" value="true" />
@@ -288,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735275473889</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="import aspect for controller">
+      <option name="closed" value="true" />
+      <created>1735318562676</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735318562676</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +325,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
     <MESSAGE value="import" />
-    <option name="LAST_COMMIT_MESSAGE" value="import" />
+    <MESSAGE value="import aspect for controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="import aspect for controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
