@@ -3,6 +3,7 @@ package com.crudDemo.crudDemo.dao;
 import java.util.List;
 
 public interface AbstractDao {
+
     <T> void delete(T object);
 
     <T> void save(T entity);

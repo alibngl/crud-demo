@@ -3,11 +3,13 @@ package com.crudDemo.crudDemo.dao.impl;
 import com.crudDemo.crudDemo.dao.AbstractDao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 import java.util.List;
 
-public class AbstractDaoImpl implements AbstractDao, Serializable {
+@Repository
+public abstract class AbstractDaoImpl implements AbstractDao, Serializable {
 
     @PersistenceContext
     protected EntityManager entityManager;

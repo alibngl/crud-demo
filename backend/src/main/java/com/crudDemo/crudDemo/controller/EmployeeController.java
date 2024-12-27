@@ -1,7 +1,9 @@
 package com.crudDemo.crudDemo.controller;
 
 import com.crudDemo.crudDemo.model.Employee;
+import com.crudDemo.crudDemo.model.User;
 import com.crudDemo.crudDemo.model.dto.EmployeeDTO;
+import com.crudDemo.crudDemo.model.dto.UserDTO;
 import com.crudDemo.crudDemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -33,6 +35,16 @@ public class EmployeeController {
     public ResponseEntity<String> updateEmployee(@RequestBody Employee employeeTable) {
         employeeService.save(employeeTable);
         return ResponseEntity.ok("Employee updated successfully.");
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<EmployeeDTO> getEmployeeById(@PathVariable Long id) {
+        Employee employee = employeeService.findById(id);
+        if (employee == null) {
+            return ResponseEntity.notFound().build();
+        }
+        EmployeeDTO employeeDTO = EmployeeDTO.mapToDTO(employee);
+        return ResponseEntity.ok(employeeDTO);
     }
 
     @GetMapping

@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/ExceptionLoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/ErrorLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/ErrorLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/config/CacheConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.2024-12-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.2024-12-27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/CrudDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/CrudDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/impl/AbstractDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/dao/impl/AbstractDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +271,7 @@
       <workItem from="1735158714193" duration="600000" />
       <workItem from="1735159331791" duration="4213000" />
       <workItem from="1735218784705" duration="6041000" />
-      <workItem from="1735244119729" duration="22594000" />
+      <workItem from="1735244119729" duration="27481000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <option name="closed" value="true" />
@@ -311,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735321414605</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="import aspect for ErrorLog">
+      <option name="closed" value="true" />
+      <created>1735323696598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735323696598</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,29 +355,30 @@
     <MESSAGE value="import" />
     <MESSAGE value="import aspect for controller" />
     <MESSAGE value="import aspect for service" />
-    <option name="LAST_COMMIT_MESSAGE" value="import aspect for service" />
+    <MESSAGE value="import aspect for ErrorLog" />
+    <option name="LAST_COMMIT_MESSAGE" value="import aspect for ErrorLog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>63</line>
+          <line>64</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>68</line>
+          <line>76</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
-          <line>30</line>
+          <line>32</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -387,17 +398,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
-          <line>27</line>
+          <line>29</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>63</line>
+          <line>69</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>36</line>
+          <line>42</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -407,7 +418,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>92</line>
+          <line>95</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>

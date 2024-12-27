@@ -12,6 +12,7 @@ import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -23,7 +24,7 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private static Logger LOG = LoggerFactory.getLogger(UserController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private UserDao userDao;
@@ -79,18 +80,20 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Cacheable(value = "users", key = "#id")
     public User getById(Long id) {
-        User userTable = new User();
-        userTable = userDao.findById(id);
-        if (userTable == null) {
+        LOG.info("getById: " + id);
+        User user;
+        user = userDao.findById(id);
+        if (user == null) {
             throw new RuntimeException("User not found with ID: " + id);
         }
-        return userTable;
+        return user;
     }
 
     @Override
     public User getByUsername(String username) {
-        User userTable = new User();
+        User userTable;
         userTable = userDao.findByUsername(username);
         if (userTable == null) {
             throw new RuntimeException("User not found with ID: " + username);

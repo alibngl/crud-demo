@@ -1,5 +1,6 @@
 package com.crudDemo.crudDemo.service.impl;
 
+import com.crudDemo.crudDemo.controller.UserController;
 import com.crudDemo.crudDemo.dao.EmployeeDao;
 import com.crudDemo.crudDemo.dao.LocationDao;
 import com.crudDemo.crudDemo.model.Employee;
@@ -11,13 +12,18 @@ import com.crudDemo.crudDemo.service.LocationService;
 import com.crudDemo.crudDemo.service.UserRoleService;
 import com.crudDemo.crudDemo.service.UserService;
 import jakarta.transaction.Transactional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private EmployeeDao employeeDao;
@@ -65,7 +71,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    @Cacheable(value = "employees", key = "#id")
     public Employee findById(Long id) {
+        LOG.info("Find employee by id: {}", id);
         Employee employee = employeeDao.findById(id);
         if (employee.getId() == null) {
             throw new RuntimeException("Employee not found with ID: " + id);
