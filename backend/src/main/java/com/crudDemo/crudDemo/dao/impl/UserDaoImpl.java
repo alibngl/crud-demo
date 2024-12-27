@@ -15,9 +15,6 @@ import java.util.List;
 @Repository
 public class UserDaoImpl extends AbstractDaoImpl implements UserDao {
 
-    @PersistenceContext
-    private EntityManager entityManager;
-
     @Override
     public User findById(Long id) {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();

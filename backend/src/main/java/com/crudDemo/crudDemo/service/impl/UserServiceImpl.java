@@ -51,31 +51,31 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void updateUser(Long id, UserDTO userDTO) {
-        User userTable = userDao.findById(id);
-        if (userTable == null) {
+        User user = userDao.findById(id);
+        if (user == null) {
             throw new RuntimeException("User not found with ID: " + id);
         }
         if (userDTO.getUsername() != null) {
-            userTable.setUsername(userDTO.getUsername());
+            user.setUsername(userDTO.getUsername());
         }
         if (userDTO.getEmail() != null) {
-            userTable.setEmail(userDTO.getEmail());
+            user.setEmail(userDTO.getEmail());
         }
-        List<String> userRoleValues = userTable.getUserRoles().stream()
+        List<String> userRoleValues = user.getUserRoles().stream()
                 .map(userRole -> userRole.getUserRoleEnum().getValue())
                 .toList();
 
         if (userDTO.getRoles().containsAll(userRoleValues)) {
-            userTable.getUserRoles().clear();
+            user.getUserRoles().clear();
             for (String role : userDTO.getRoles()) {
                 UserRole userRole = new UserRole();
                 userRole.setUserRoleEnum(UserRoleEnum.valueOf(role));
-                userRole.setUser(userTable);
-                userTable.getUserRoles().add(userRole);
+                userRole.setUser(user);
+                user.getUserRoles().add(userRole);
             }
         }
-        userTable.setEnabled(userDTO.isEnabled());
-        userDao.update(userTable);
+        user.setEnabled(userDTO.isEnabled());
+        userDao.update(user);
     }
 
     @Override

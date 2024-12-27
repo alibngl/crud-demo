@@ -1,6 +1,7 @@
 package com.crudDemo.crudDemo.controller;
 
 import com.crudDemo.crudDemo.model.Employee;
+import com.crudDemo.crudDemo.model.dto.EmployeeDTO;
 import com.crudDemo.crudDemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 
 import java.util.List;
 
@@ -36,9 +36,12 @@ public class EmployeeController {
     }
 
     @GetMapping
-    public List<Employee> getAllEmployees() {
-        List<Employee> employeeTables = employeeService.findAll();
-        return !employeeTables.isEmpty() ? employeeTables : null;
+    public List<EmployeeDTO> getAllEmployees() {
+        List<EmployeeDTO> employees = employeeService.findAll()
+                .stream()
+                .map(EmployeeDTO::mapToDTO)
+                .toList();
+        return !employees.isEmpty() ? employees : null;
     }
 
     @DeleteMapping("/{id}")

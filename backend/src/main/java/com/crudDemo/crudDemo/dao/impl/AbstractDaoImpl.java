@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class AbstractDaoImpl implements AbstractDao, Serializable {
 
@@ -24,5 +25,10 @@ public class AbstractDaoImpl implements AbstractDao, Serializable {
     @Override
     public <T> void delete(T entity) {
         entityManager.remove(entity);
+    }
+
+    @Override
+    public <T> void saveAll(List<T> entities) {
+        entities.forEach(this::save);
     }
 }

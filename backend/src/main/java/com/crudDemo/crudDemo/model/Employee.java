@@ -27,7 +27,8 @@ public class Employee implements Serializable {
     @Column(name = "manager")
     private boolean manager;
 
-    @OneToOne(cascade = CascadeType.MERGE, mappedBy = "employee")
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_fk")
     private User user;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

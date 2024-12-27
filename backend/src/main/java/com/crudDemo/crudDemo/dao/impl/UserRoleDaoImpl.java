@@ -7,7 +7,9 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Join;
 import jakarta.persistence.criteria.Root;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class UserRoleDaoImpl extends AbstractDaoImpl implements UserRoleDao {
 
     @Override
