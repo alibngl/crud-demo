@@ -61,15 +61,10 @@ public class UserController {
 
     @GetMapping
     public List<UserDTO> getAllUsers() {
-        long startTime = System.currentTimeMillis();
-        List<UserDTO> users = userService.getAllUsers()
+        return userService.getAllUsers()
                 .stream()
                 .map(UserDTO::mapToDTO)
                 .toList();
-        long endTime = System.currentTimeMillis();
-        long time = endTime - startTime;
-        System.out.println("Çalışan Getirme işlemi tamamlandı. Süre: " + time + " ms");
-        return users;
     }
 
     @DeleteMapping("/{id}")

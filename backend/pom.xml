@@ -89,7 +89,7 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-repository-metadata</artifactId>
-            <version>4.0.0-alpha-13</version>
+            <version>3.9.9</version>
         </dependency>
         <dependency>
             <groupId>com.auth0</groupId>
@@ -114,7 +114,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.5.12</version>
+            <version>1.5.6</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
@@ -132,6 +132,11 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>6.2.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -142,7 +147,7 @@
                 <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source>
-                    <target>${java.version</target>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
         </plugins>
