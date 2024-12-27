@@ -1,13 +1,14 @@
 package com.crudDemo.crudDemo.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.io.Serializable;
 
 @Data
 @Entity
 @Table(name = "employee_table")
+@ToString(exclude = "user")
 public class Employee implements Serializable {
 
     @Id

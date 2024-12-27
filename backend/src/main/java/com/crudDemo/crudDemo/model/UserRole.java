@@ -23,9 +23,7 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(of = "id")
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString(of = "id")
+@ToString(exclude = {"user"})
 @Table(name = "user_role_table")
 public class UserRole implements Serializable {
 

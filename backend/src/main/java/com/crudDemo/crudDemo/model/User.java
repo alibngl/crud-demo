@@ -11,7 +11,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
-
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -19,6 +19,7 @@ import java.util.List;
 
 @Data
 @Entity
+@ToString(exclude = {"userRoles", "employee"})
 @Table(name = "user_table")
 public class User implements Serializable {
 
