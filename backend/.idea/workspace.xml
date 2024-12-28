@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
+    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="change jwt secret ket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/security/TestSecurityConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <recent name="com.crudDemo.crudDemo.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CrudDemoApplication">
+  <component name="RunManager" selected="JUnit.UserControllerTest.allUsers_Success">
     <configuration name="UserControllerTest.allUsers_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
       <extension name="coverage">
@@ -142,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.registerUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.deleteUser_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
       <extension name="coverage">
         <pattern>
@@ -152,13 +152,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
       <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="registerUser_Failure" />
+      <option name="METHOD_NAME" value="deleteUser_Success" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.registerUser_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.updateUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
       <extension name="coverage">
         <pattern>
@@ -168,7 +168,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
       <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="registerUser_Success" />
+      <option name="METHOD_NAME" value="updateUser_Failure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -210,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserControllerTest.updateUser_Success" />
-        <item itemvalue="JUnit.UserControllerTest.registerUser_Success" />
-        <item itemvalue="JUnit.UserControllerTest.registerUser_Failure" />
-        <item itemvalue="JUnit.UserControllerTest.deleteUser_Failure" />
         <item itemvalue="JUnit.UserControllerTest.allUsers_Success" />
+        <item itemvalue="JUnit.UserControllerTest.deleteUser_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.deleteUser_Success" />
+        <item itemvalue="JUnit.UserControllerTest.updateUser_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.updateUser_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735362061651</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="LoggingAspect add logEntryThreadLocal">
+      <option name="closed" value="true" />
+      <created>1735363362996</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735363362996</updated>
+    </task>
+    <task id="LOCAL-00010" summary="change jwt secret ket">
+      <option name="closed" value="true" />
+      <created>1735363482899</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735363482899</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +382,9 @@
     <MESSAGE value="import CacheConfig and @EnableCaching" />
     <MESSAGE value="import @Before and @After" />
     <MESSAGE value="add @CacheEvict" />
-    <option name="LAST_COMMIT_MESSAGE" value="add @CacheEvict" />
+    <MESSAGE value="LoggingAspect add logEntryThreadLocal" />
+    <MESSAGE value="change jwt secret ket" />
+    <option name="LAST_COMMIT_MESSAGE" value="change jwt secret ket" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
