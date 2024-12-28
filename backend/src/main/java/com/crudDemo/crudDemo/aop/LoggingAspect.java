@@ -27,7 +27,7 @@ public class LoggingAspect {
     @Autowired
     private  ObjectMapper objectMapper;
 
-    private ThreadLocal<RequestResponseLog> logEntryThreadLocal = new ThreadLocal<>();
+    private final ThreadLocal<RequestResponseLog> logEntryThreadLocal = new ThreadLocal<>();
 
     @Before("execution(* com.crudDemo.crudDemo.controller..*(..))")
     public void logBeforeController(JoinPoint joinPoint) throws Throwable {

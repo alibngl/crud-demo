@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class JwtUtil {
 
-    private static final String SECRET_KEY = "yourSuperSecretKeyThatIsLongEnoughForHS256";
+    private static final String SECRET_KEY = "CqMZSVn/iwYqbqN/xSMh/AFUE14CPcDsvf1nCCdGgV8=";
 
     private Key getSigningKey() {
         return new SecretKeySpec(SECRET_KEY.getBytes(StandardCharsets.UTF_8), SignatureAlgorithm.HS256.getJcaName());
