@@ -12,6 +12,7 @@ import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -51,6 +52,7 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
+    @CacheEvict(value = "users", key = "#id")
     public void updateUser(Long id, UserDTO userDTO) {
         User user = userDao.findById(id);
         if (user == null) {
@@ -114,8 +116,9 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
+    @CacheEvict(value = "users", key = "#id")
     public void deleteUser(Long id) {
-        User deleteUser = getById(id);
+        User deleteUser = userDao.findById(id);
         if (deleteUser != null) {
             userDao.delete(deleteUser);
         } else {

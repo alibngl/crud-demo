@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.2024-12-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.2024-12-27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/aop/LoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/model/RequestResponseLog.java" afterDir="false" />
+    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="import @Before and @After">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.CrudDemoApplication.executor": "Debug",
-    "git-widget-placeholder": "afterthrowing",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/abingol/Documents/GitHub/crud-demo/backend",
@@ -212,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest.updateUser_Success" />
         <item itemvalue="JUnit.UserControllerTest.registerUser_Success" />
         <item itemvalue="JUnit.UserControllerTest.registerUser_Failure" />
-        <item itemvalue="JUnit.UserControllerTest.updateUser_Success" />
-        <item itemvalue="JUnit.UserControllerTest.allUsers_Success" />
         <item itemvalue="JUnit.UserControllerTest.deleteUser_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.allUsers_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -365,12 +362,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>64</line>
+          <line>49</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>72</line>
+          <line>57</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -420,7 +417,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java</url>
-          <line>95</line>
+          <line>97</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
