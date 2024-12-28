@@ -10,6 +10,7 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -20,13 +21,13 @@ import java.util.Arrays;
 @Component
 public class LoggingAspect {
 
-    private final RequestResponseLogRepository logRepository;
-    private final ObjectMapper objectMapper;
+    @Autowired
+    private RequestResponseLogRepository logRepository;
 
-    public LoggingAspect(RequestResponseLogRepository logRepository, ObjectMapper objectMapper) {
-        this.logRepository = logRepository;
-        this.objectMapper = objectMapper;
-    }
+    @Autowired
+    private  ObjectMapper objectMapper;
+
+    private ThreadLocal<RequestResponseLog> logEntryThreadLocal = new ThreadLocal<>();
 
     @Before("execution(* com.crudDemo.crudDemo.controller..*(..))")
     public void logBeforeController(JoinPoint joinPoint) throws Throwable {
@@ -41,20 +42,22 @@ public class LoggingAspect {
         } catch (Exception e) {
             logEntry.setRequestBody(Arrays.toString(args));
         }
+        logEntryThreadLocal.set(logEntry);
     }
 
     @AfterReturning(pointcut = "execution(* com.crudDemo.crudDemo.controller..*(..))", returning = "result")
-    public void logAfterController(JoinPoint joinPoint, Object result) throws Throwable {
-        RequestResponseLog logEntry = new RequestResponseLog();
+    public void logAfterController(Object result) throws Throwable {
+        RequestResponseLog logEntry = logEntryThreadLocal.get();
         logEntry.setResponseBody(objectMapper.writeValueAsString(result));
         logEntry.setCompletedTime(LocalDateTime.now());
         logEntry.setDurationMs(ChronoUnit.MILLIS.between(logEntry.getCreatedTime(), logEntry.getCompletedTime()));
         logRepository.save(logEntry);
+        logEntryThreadLocal.remove();
     }
 
     @AfterThrowing(pointcut = "execution(* com.crudDemo.crudDemo.controller..*(..))", throwing = "ex")
-    public void logAfterThrowingController(JoinPoint joinPoint, Throwable ex) {
-        RequestResponseLog logEntry = new RequestResponseLog();
+    public void logAfterThrowingController(Throwable ex) {
+        RequestResponseLog logEntry = logEntryThreadLocal.get();
         logEntry.setResponseBody("Exception: " + ex.getMessage());
         logEntry.setCompletedTime(LocalDateTime.now());
         long duration = ChronoUnit.MILLIS.between(logEntry.getCreatedTime(), logEntry.getCompletedTime());
