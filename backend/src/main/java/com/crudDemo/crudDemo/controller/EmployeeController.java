@@ -5,6 +5,8 @@ import com.crudDemo.crudDemo.model.User;
 import com.crudDemo.crudDemo.model.dto.EmployeeDTO;
 import com.crudDemo.crudDemo.model.dto.UserDTO;
 import com.crudDemo.crudDemo.service.EmployeeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -22,13 +24,24 @@ import java.util.List;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private EmployeeService employeeService;
 
     @PostMapping("/register")
     public ResponseEntity<String> registerEmployee(@RequestBody Employee employee) {
-        employeeService.save(employee);
-        return ResponseEntity.ok("Employee registered successfully.");
+        try {
+            employeeService.save(employee);
+            LOG.info("Employee registered successfully: {}", employee.getFirstName());
+            return ResponseEntity.ok("Employee registered successfully.");
+        }  catch (IllegalArgumentException e) {
+            LOG.error("Validation failed: {}", e.getMessage());
+            return ResponseEntity.status(400).body(e.getMessage());
+        } catch (Exception e) {
+            LOG.error("Employee not saved", e);
+            return ResponseEntity.status(500).body("Employee registration failed.");
+        }
     }
 
     @PutMapping("/update/{id}")

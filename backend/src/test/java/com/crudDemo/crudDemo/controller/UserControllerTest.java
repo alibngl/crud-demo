@@ -34,13 +34,13 @@ public class UserControllerTest {
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void registerUser_Success() throws Exception {
 
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("aaa123");
-        userTable.setUsername("aaa");
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("aaa123");
+        user.setUsername("aaa");
 
-        String content = (new ObjectMapper()).writeValueAsString(userTable);
+        String content = (new ObjectMapper()).writeValueAsString(user);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/api/users/register")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(content);
@@ -57,13 +57,13 @@ public class UserControllerTest {
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void registerUser_Failure() throws Exception {
 
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("");
-        userTable.setUsername("aaa");
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("");
+        user.setUsername("aaa");
 
-        String content = (new ObjectMapper()).writeValueAsString(userTable);
+        String content = (new ObjectMapper()).writeValueAsString(user);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/api/users/register")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(content);
@@ -72,19 +72,19 @@ public class UserControllerTest {
                 .build()
                 .perform(requestBuilder)
                 .andExpect(MockMvcResultMatchers.status().isBadRequest())
-                .andExpect(MockMvcResultMatchers.content().string("password cannot be null or empty"));
+                .andExpect(MockMvcResultMatchers.content().string("password cannot be null"));
     }
 
     @Test
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void updateUser_Success() throws Exception {
         UserDTO updatedUser = new UserDTO(1L, "aaa", "aaa@aaa", true, new HashSet<>(), null);
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("aaa123");
-        userTable.setUsername("aaa");
-        userController.registerUser(userTable);
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("aaa123");
+        user.setUsername("aaa");
+        userController.registerUser(user);
         ResponseEntity<String> actualUpdateUserResult = userController.updateUser(1L, updatedUser);
 
         HttpStatusCode statusCode = actualUpdateUserResult.getStatusCode();
@@ -99,12 +99,12 @@ public class UserControllerTest {
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void updateUser_Failure() throws Exception {
         UserDTO updatedUser = new UserDTO(1L, "aaa", "aaa@aaa", true, new HashSet<>(), null);
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("aaa123");
-        userTable.setUsername("aaa");
-        userController.registerUser(userTable);
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("aaa123");
+        user.setUsername("aaa");
+        userController.registerUser(user);
         ResponseEntity<String> actualUpdateUserResult = userController.updateUser(2L, updatedUser);
 
         HttpStatusCode statusCode = actualUpdateUserResult.getStatusCode();
@@ -119,12 +119,12 @@ public class UserControllerTest {
     @Test
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void deleteUser_Success() throws Exception {
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("aaa123");
-        userTable.setUsername("aaa");
-        userController.registerUser(userTable);
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("aaa123");
+        user.setUsername("aaa");
+        userController.registerUser(user);
         ResponseEntity<String> actualUpdateUserResult = userController.deleteUser(1L);
 
         HttpStatusCode statusCode = actualUpdateUserResult.getStatusCode();
@@ -138,12 +138,12 @@ public class UserControllerTest {
     @Test
     @WithMockUser(username = "test_user", roles = {"ADMIN"})
     void deleteUser_Failure() {
-        User userTable = new User();
-        userTable.setEmail("aaa@aaa");
-        userTable.setEnabled(true);
-        userTable.setPassword("aaa123");
-        userTable.setUsername("aaa");
-        userController.registerUser(userTable);
+        User user = new User();
+        user.setEmail("aaa@aaa");
+        user.setEnabled(true);
+        user.setPassword("aaa123");
+        user.setUsername("aaa");
+        userController.registerUser(user);
         ResponseEntity<String> actualDeleteUserResult = userController.deleteUser(2L);
 
         HttpStatusCode statusCode = actualDeleteUserResult.getStatusCode();

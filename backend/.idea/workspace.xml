@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="change jwt secret ket">
+    <list default="true" id="1851ef3c-70ee-4e36-b971-09b06a37d7e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/controller/EmployeeControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/security/TestSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/crudDemo/crudDemo/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,51 +56,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LogbackTest.executor": "Run",
-    "JUnit.CrudDemoApplicationTests.contextLoads.executor": "Debug",
-    "JUnit.Log4j2Test.testLog.executor": "Debug",
-    "JUnit.LogbackTest.testLog.executor": "Debug",
-    "JUnit.LoginControllerDiffblueTest.testLogin_givenLocationTableIdIsTwo_thenContentStringAString.executor": "Run",
-    "JUnit.UserControllerDiffblueTest.testGetAllUsers_thenContentStringLeftSquareBracketRightSquareBracket.executor": "Run",
-    "JUnit.UserControllerDiffblueTest.testRegisterUser.executor": "Run",
-    "JUnit.UserControllerTest$NoBeforeEachContext.registerUser_Success.executor": "Run",
-    "JUnit.UserControllerTest.allUsers_Success.executor": "Run",
-    "JUnit.UserControllerTest.deleteUser_Failure.executor": "Run",
-    "JUnit.UserControllerTest.deleteUser_Success.executor": "Run",
-    "JUnit.UserControllerTest.getAllUsers_Success.executor": "Run",
-    "JUnit.UserControllerTest.getUserById_Success.executor": "Run",
-    "JUnit.UserControllerTest.registerUser_Failure.executor": "Run",
-    "JUnit.UserControllerTest.registerUser_Success.executor": "Run",
-    "JUnit.UserControllerTest.testDeleteUser_Success.executor": "Run",
-    "JUnit.UserControllerTest.testDeleteUser_UserNotFound.executor": "Run",
-    "JUnit.UserControllerTest.updateUser_Failure.executor": "Run",
-    "JUnit.UserControllerTest.updateUser_Success.executor": "Run",
-    "Maven.crudDemo [clean].executor": "Run",
-    "Maven.crudDemo [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CrudDemoApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/abingol/Documents/GitHub/crud-demo/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.41034484",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LogbackTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CrudDemoApplicationTests.contextLoads.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.EmployeeControllerTest.testRegisterEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeControllerTest.testRegisterEmployee_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Log4j2Test.testLog.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LogbackTest.testLog.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LoginControllerDiffblueTest.testLogin_givenLocationTableIdIsTwo_thenContentStringAString.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerDiffblueTest.testGetAllUsers_thenContentStringLeftSquareBracketRightSquareBracket.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerDiffblueTest.testRegisterUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest$NoBeforeEachContext.registerUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.allUsers_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.deleteUser_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.deleteUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.getAllUsers_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.getUserById_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.registerUser_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.registerUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testDeleteUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.testDeleteUser_UserNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.updateUser_Failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserControllerTest.updateUser_Success.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.crudDemo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.crudDemo [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CrudDemoApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abingol/Documents/GitHub/crud-demo/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41034484&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ali35\Desktop\crudDemo\src\test" />
@@ -109,7 +116,39 @@
       <recent name="com.crudDemo.crudDemo.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.allUsers_Success">
+  <component name="RunManager" selected="JUnit.EmployeeControllerTest.testRegisterEmployee_Failure">
+    <configuration name="EmployeeControllerTest.testRegisterEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crudDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.EmployeeControllerTest" />
+      <option name="METHOD_NAME" value="testRegisterEmployee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeControllerTest.testRegisterEmployee_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crudDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.EmployeeControllerTest" />
+      <option name="METHOD_NAME" value="testRegisterEmployee_Failure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserControllerTest.allUsers_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
       <extension name="coverage">
@@ -126,7 +165,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.deleteUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.registerUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="crudDemo" />
       <extension name="coverage">
         <pattern>
@@ -136,55 +175,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
       <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="deleteUser_Failure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.deleteUser_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crudDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="deleteUser_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.updateUser_Failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crudDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUser_Failure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.updateUser_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="crudDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.crudDemo.crudDemo.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.crudDemo.crudDemo.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.crudDemo.crudDemo.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUser_Success" />
+      <option name="METHOD_NAME" value="registerUser_Failure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,6 +190,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Write tests for method EmployeeController.registerEmployee" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="crudDemo" />
+      <settings run-config-name="Write tests for method EmployeeController.registerEmployee" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="com.crudDemo.crudDemo.controller.EmployeeController.registerEmployee:(Lcom/crudDemo/crudDemo/model/Employee;)Lorg/springframework/http/ResponseEntity;" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <configuration name="Write tests for method LoginController.login" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
       <module name="crudDemo" />
       <settings run-config-name="Write tests for method LoginController.login" include-system-env-vars="true" skeleton-tests-only="false">
@@ -210,11 +210,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeControllerTest.testRegisterEmployee_Failure" />
+        <item itemvalue="JUnit.UserControllerTest.registerUser_Failure" />
+        <item itemvalue="JUnit.EmployeeControllerTest.testRegisterEmployee" />
         <item itemvalue="JUnit.UserControllerTest.allUsers_Success" />
-        <item itemvalue="JUnit.UserControllerTest.deleteUser_Failure" />
-        <item itemvalue="JUnit.UserControllerTest.deleteUser_Success" />
-        <item itemvalue="JUnit.UserControllerTest.updateUser_Failure" />
-        <item itemvalue="JUnit.UserControllerTest.updateUser_Success" />
       </list>
     </recent_temporary>
   </component>
@@ -263,6 +262,7 @@
       <workItem from="1735159331791" duration="4213000" />
       <workItem from="1735218784705" duration="6041000" />
       <workItem from="1735244119729" duration="29028000" />
+      <workItem from="1735363769211" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <option name="closed" value="true" />
@@ -344,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735363482899</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="delete tes security">
+      <option name="closed" value="true" />
+      <created>1735363646870</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735363646870</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +392,8 @@
     <MESSAGE value="add @CacheEvict" />
     <MESSAGE value="LoggingAspect add logEntryThreadLocal" />
     <MESSAGE value="change jwt secret ket" />
-    <option name="LAST_COMMIT_MESSAGE" value="change jwt secret ket" />
+    <MESSAGE value="delete tes security" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete tes security" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,12 +410,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>76</line>
+          <line>79</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
-          <line>32</line>
+          <line>45</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -425,18 +434,13 @@
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/controller/EmployeeController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>69</line>
+          <line>72</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/crudDemo/crudDemo/service/impl/EmployeeServiceImpl.java</url>
-          <line>42</line>
+          <line>45</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

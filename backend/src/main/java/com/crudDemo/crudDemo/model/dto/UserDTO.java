@@ -30,7 +30,7 @@ public class UserDTO {
         }
 
         Set<String> roles = user.getUserRoles().stream()
-                .map(userRoleTable -> userRoleTable.getUserRoleEnum().name())
+                .map(userRole -> userRole.getUserRoleEnum().name())
                 .collect(Collectors.toSet());
 
         return new UserDTO(

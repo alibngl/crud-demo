@@ -47,8 +47,8 @@ public class UserDaoImpl extends AbstractDaoImpl implements UserDao {
     }
 
 //    @Override
-//    public List<UserTable> findAll() {
-//        String jpql = "SELECT u FROM UserTable u WHERE u.id IS NOT NULL";
-//        return entityManager.createQuery(jpql, UserTable.class).getResultList();
+//    public List<User> findAll() {
+//        String jpql = "SELECT u FROM User u WHERE u.id IS NOT NULL";
+//        return entityManager.createQuery(jpql, User.class).getResultList();
 //    }
 }

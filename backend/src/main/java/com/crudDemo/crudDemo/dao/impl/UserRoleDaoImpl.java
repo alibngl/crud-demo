@@ -17,7 +17,7 @@ public class UserRoleDaoImpl extends AbstractDaoImpl implements UserRoleDao {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<UserRole> query = cb.createQuery(UserRole.class);
         Root<UserRole> userRoleRoot = query.from(UserRole.class);
-        Join<UserRole, User> userJoin = userRoleRoot.join("userTable");
+        Join<UserRole, User> userJoin = userRoleRoot.join("user");
 
         query.select(userRoleRoot)
                 .where(cb.equal(userJoin.get("id"), userId));

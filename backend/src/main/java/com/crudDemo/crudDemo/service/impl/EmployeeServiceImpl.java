@@ -40,6 +40,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Transactional
     @Override
     public void save(Employee employee) {
+        if (employee.getFirstName() == null || employee.getSurName() == null) {
+            throw new IllegalArgumentException("firstname or surname cannot be null");
+        }
         if (employee.getUser() != null) {
             userService.save(employee.getUser());
             User user = userService.getById(employee.getUser().getId());

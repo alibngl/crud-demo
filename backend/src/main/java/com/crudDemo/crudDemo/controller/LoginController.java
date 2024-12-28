@@ -35,7 +35,7 @@ public class LoginController {
         User user = userService.getByUsername(loginRequest.getUsername());
 
         if (user != null && passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
-            List<String> roles = user.getUserRoles().stream().map(userRoleTable -> userRoleTable.getUserRoleEnum().getValue()).toList();
+            List<String> roles = user.getUserRoles().stream().map(userRole -> userRole.getUserRoleEnum().getValue()).toList();
             String token = jwtUtilService.generateToken(user.getUsername(), roles);
 
             UserResponseDTO responseDTO = new UserResponseDTO();

@@ -37,15 +37,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(User user) {
         if (user.getUsername() == null || user.getUsername().isBlank()) {
-            throw new IllegalArgumentException("username cannot be null or empty");
+            throw new IllegalArgumentException("username cannot be null");
         }
         if (user.getPassword() == null || user.getPassword().isBlank()) {
-            throw new IllegalArgumentException("password cannot be null or empty");
+            throw new IllegalArgumentException("password cannot be null");
         }
         String hashedPassword = new BCryptPasswordEncoder().encode(user.getPassword());
         user.setPassword(hashedPassword);
-        for (UserRole userRoleTable : user.getUserRoles()) {
-            userRoleTable.setUser(user);
+        for (UserRole userRole : user.getUserRoles()) {
+            userRole.setUser(user);
         }
         userDao.save(user);
     }
@@ -95,12 +95,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getByUsername(String username) {
-        User userTable;
-        userTable = userDao.findByUsername(username);
-        if (userTable == null) {
+        User  user;
+        user = userDao.findByUsername(username);
+        if ( user == null) {
             throw new RuntimeException("User not found with ID: " + username);
         }
-        return userTable;
+        return  user;
     }
 
     @Override
@@ -109,7 +109,7 @@ public class UserServiceImpl implements UserService {
     }
 
 //    @Override
-//    public List<UserTable> getAllUsers() { // bu method ile 30 ms sürüyor
+//    public List<User> getAllUsers() { // bu method ile 30 ms sürüyor
 //        return userRepository.findAll();
 //    }
 
